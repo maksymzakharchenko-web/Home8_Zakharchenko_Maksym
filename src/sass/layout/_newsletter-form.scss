@@ -1,0 +1,68 @@
+.newsletter {
+  background: url("../img/burgers-wrapper.png") no-repeat center;
+  background-size: cover;
+}
+
+.newsletter-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: $white;
+    font-size: 30px;
+    padding: 50px 0 10px;
+  }
+  p {
+    max-width: 500px;
+    color: $white;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.form-email {
+  display: flex;
+  width: 500px;
+  height: 54px;
+  border-radius: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+  filter: contrast(150%);
+  @media (max-width: 500px) {
+    width: 310px;
+  }
+}
+
+input[placeholder] {
+  background-color: grey;
+  color: #ffffff;
+  padding-left: 20px;
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.submit-btn {
+  position: relative;
+  bottom: 55px;
+  left: 360px;
+  width: 140px;
+  height: 54px;
+  border-radius: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: $white;
+  color: $some-btns-collor;
+  @media (max-width: 500px) {
+    left: 170px;
+  }
+  &:hover {
+    background: $hover-color;
+    color: $white;
+  }
+}

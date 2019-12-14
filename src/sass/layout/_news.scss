@@ -1,0 +1,67 @@
+.our-news {
+  background: $bg-color;
+  h2 {
+    padding: 50px 0;
+    @media (max-width: 800px) {
+      padding: 25px 0;
+    }
+  }
+}
+
+.our-news-block {
+  @include flex-row-space-around;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.news-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 29px;
+  @media (max-width: 600px) {
+    margin-right: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  h3 {
+    text-align: center;
+    color: $main-menu-and-some-headers-color;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 15px;
+    color: $main-menu-and-some-headers-color;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.tea-img, .ice-cream-img, .burgers-img {
+  min-width: 33.33%;
+  min-height: 180px;
+  margin-bottom: 15px;
+  @media (max-width: 915px) {
+    min-height: 120px;
+  }
+  @media (max-width: 600px) {
+    min-height: 180px;
+  }
+}
+
+.tea-img {
+  background: url("../img/tea.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.ice-cream-img {
+  background: url("../img/ice-cream.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.burgers-img {
+  background: url("../img/burgers.jpg") no-repeat center;
+  background-size: contain;
+}

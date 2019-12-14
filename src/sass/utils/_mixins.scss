@@ -1,0 +1,19 @@
+/* discharge margins and paddings */
+@mixin discharge-margins-and-paddings {
+  margin: 0;
+  padding: 0;
+}
+
+/* some flex properties */
+@mixin flex-row-space-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* main content container */
+@mixin container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

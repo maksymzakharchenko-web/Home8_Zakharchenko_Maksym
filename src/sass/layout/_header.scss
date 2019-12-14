@@ -1,0 +1,35 @@
+.main-header {
+  background: $bg-color;
+  .logo-and-menu {
+    @include flex-row-space-around;
+    align-items: center;
+    padding: 30px 0 15px;
+  }
+}
+
+.logo {
+  @media (max-width: 802px) {
+    margin: 0 auto;
+  }
+}
+
+ul {
+  display: flex;
+  @media (max-width: 802px) {
+    display: none;
+  }
+  li {
+    list-style: none;
+    a {
+      font-size: 18px;
+      text-decoration: none;
+      color: $main-menu-and-some-headers-color;
+      padding: 10px 15px;
+      &:hover {
+        background-color: $hover-color;
+        border-radius: 25px;
+        color: $bg-color;
+      }
+    }
+  }
+}
